@@ -56,7 +56,6 @@ workflow の定期実行によって、YouTube アカウントで作成した Pl
     1. workflow が成功して、`archive/youtube/playlists` 下に playlist の情報が commit されていることを確認する
 1. 定期実行時刻を設定
     1. [.github/workflows/archive-youtube-playlists.yaml#L5](https://github.com/kyamotsu/playlist-archive/blob/main/.github/workflows/archive-youtube-playlists.yaml#L5) を編集して、実行頻度、時刻を設定する
-        1. デフォルトでは UTC 毎週日曜0時実行
         1. 実行頻度や Playlist 数によっては、Youtube API の request 制限に引っかかるので注意
 
 ### 削除された動画の patch
